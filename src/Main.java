@@ -4,28 +4,16 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Stelle mir eine Ja/Nein-Frage:");
+        String question = scanner.nextLine();
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        System.out.println("Hmm... mal sehen...");
+        String[] answers = {"Ja!", "Nein!", "Vielleicht?", "Auf keinen Fall!", "Frag mich nicht sowas!"};
+        String answer = answers[new Random().nextInt(answers.length)];
 
-            string schnacksln;
-
-            for (int =i; i < schnacksln.lenght; i++){
-                System.out.println("wer hot do karotten eineton, seind de teipad");
-                System.out.println("wie oft wird flo heute schnacksln" +schnacksln.length);
-
-            }
-            int handynummer;
-
-            Scanner scanner = new Scanner(System.in);
-            System.out.println("Bitte gib deine Handynummer ein: ");
-            handynummer = scanner.nextInt();
-
+        System.out.println("Die Antwort lautet: " + answer);
+        System.out.println("Ob das jetzt wirklich stimmt? Tja, wer weiß...");
         }
     }
 }
